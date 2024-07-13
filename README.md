@@ -10,3 +10,9 @@ This project implements a report generator for mechanical properties of material
 - **Report Generation**: Functionality to generate detailed reports on mechanical properties of materials.
 - **Web Interface**: Web-based user interface for easy navigation and usage.
 - **Customization**: Ability to customize parameters and features of the generated reports.
+
+## Author
+
+Catalina Delgado
+
+- **Email**: catalina08delgado@gmail.com
