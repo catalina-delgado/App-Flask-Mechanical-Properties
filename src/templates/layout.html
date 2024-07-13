@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script async src="https://cse.google.com/cse.js?cx=90e49d9cbda4e4443">
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Comparador</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/about">Acerca de</a></li>
+                <li><a href="/contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="user-panel">
+            {% if user_authenticated %}
+                <span>Bienvenido, {{ username }}!</span>
+                <a href="/logout">Cerrar sesión</a>
+            {% else %}
+                <a href="/login">Iniciar sesión</a>
+                <a href="/register">Registrarse</a>
+            {% endif %}
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <ul>
+                <li class="tooltip">
+                    <a href="/"><i class="fas fa-tachometer-alt"></i></a>
+                    <span class="tooltiptext">Panel de Control</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/profile"><i class="fas fa-user"></i></a>
+                    <span class="tooltiptext">Perfil</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/settings"><i class="fas fa-cog"></i></a>
+                    <span class="tooltiptext">Configuración</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/help"><i class="fas fa-question-circle"></i></a>
+                    <span class="tooltiptext">Ayuda</span>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="container">
+                <h1>Comparador de Productos</h1>
+                <div class="comparison-table"></div>
+            </div>
+            <div class="gcse-search"></div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Escribe tu búsqueda aquí..." oninput="showSuggestions()">
+                </div>
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

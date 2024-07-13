@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Producto 1",
+        "description": "Descripcion del producto 1",
+        "price": 19.99,
+        "entrega": "4 dias"
+    },
+    {
+        "id": 2,
+        "name": "Producto 2",
+        "description": "Descripcion del producto 2",
+        "price": 29.99,
+        "entrega": "3 dias"
+    },
+    {
+        "id": 3,
+        "name": "Producto 3",
+        "description": "Descripcion del producto 3",
+        "price": 39.99,
+        "entrega": "2 dias"
+    },
+    {
+        "id": 4,
+        "name": "Producto 4",
+        "description": "Descripcion del producto 4",
+        "price": 19.99,
+        "entrega": "3 dias"
+    }
+]
