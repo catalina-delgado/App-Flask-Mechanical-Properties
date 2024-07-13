@@ -1,6 +1,6 @@
 # Mechanical Properties Report Generator for Materials with Flask
 
-![Banner](images/interfaz.png)
+![Banner](images/Interfaz.png)
 
 This project implements a report generator for mechanical properties of materials using Flask and following an MVC (Model-View-Controller) architecture.
 
